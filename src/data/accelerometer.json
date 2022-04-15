@@ -1,0 +1,10 @@
+{
+    "accelerometer1": {
+        "id": "S1111",
+        "vehicleId": "MTR01"
+    },
+    "accelerometer2": {
+        "id": "S1111",
+        "vehicleId": "MTR01"
+    }
+}
