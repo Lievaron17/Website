@@ -48,13 +48,13 @@ const ErrorMessageDialog = ({ isOpen, onClose }) => {
       aria-describedby="error-message-dialog-description"
     >
       <DialogTitle id="error-message-dialog-title">
-        That’s not supposed to happen...
+        Error occured
       </DialogTitle>
 
       <DialogContent>
         <DialogContentText id="error-message-dialog-description">
           <Box mt={1}>
-            Looks like something broke (whoops)! Please try again.
+            Please try again.
           </Box>
         </DialogContentText>
       </DialogContent>

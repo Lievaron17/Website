@@ -3,16 +3,11 @@ import {
   Button,
   makeStyles,
 } from '@material-ui/core';
-import { useHistory, Link } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 
 export default function Home () {
   const classes = useStyles();
   const history = useHistory();
-
-  const onContinue = (path='/') => {
-    history.push(path);
-    window.location.reload();
-  };
 
   return (
     <Grid 
@@ -35,7 +30,7 @@ export default function Home () {
           fullWidth
           className={classes.button}
           variant="contained"
-          onClick={() => onContinue('/accelerometer')}
+          onClick={() => history.push('/accelerometer')}
         >
           Accelerometer
         </Button>
@@ -46,7 +41,7 @@ export default function Home () {
           fullWidth
           className={classes.button}
           variant="contained"
-          onClick={() => onContinue('/instrumental-drawbar')}
+          onClick={() => history.push('/instrumental-drawbar')}
         >
           Instrumental Drawbar
         </Button>
@@ -57,7 +52,7 @@ export default function Home () {
           fullWidth
           className={classes.button}
           variant="contained"
-          onClick={() => onContinue('/suspension-string')}
+          onClick={() => history.push('/suspension-string')}
         >
           Instrumented Suspension Spring
         </Button>
@@ -68,7 +63,7 @@ export default function Home () {
           fullWidth
           className={classes.button}
           variant="contained"
-          onClick={() => onContinue('/steer-sensor')}
+          onClick={() => history.push('/steer-sensor')}
         >
           Steer Sensor
         </Button>

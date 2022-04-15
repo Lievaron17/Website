@@ -7,12 +7,12 @@ import {
 
 import Home from './Home';
 import ErrorBoundary from './ErrorBoundary';
-import Accelerometer from './Accelerometer';
+import AccelerometerListPage from './AccelerometerListPage';
 
 export default function Dashboard() {
 
   return (
-    <Router>
+    // <Router>
       <ErrorBoundary>
         <Switch>
           
@@ -21,7 +21,7 @@ export default function Dashboard() {
           </Route>
 
           <Route path="/accelerometer">
-            <Accelerometer />
+            <AccelerometerListPage />
           </Route>
 
           <Route path="/instrumental-drawbar">
@@ -40,7 +40,7 @@ export default function Dashboard() {
 
         </Switch>
       </ErrorBoundary>
-    </Router>
+    // </Router>
   );
 }
 

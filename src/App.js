@@ -2,40 +2,49 @@ import {
   Box,
   AppBar,
   IconButton,
-  Menu as MenuIcon,
-  Typography,
   Button,
   Toolbar,
 } from '@material-ui/core';
-import { Router } from 'react-router-dom';
-
+import { useHistory } from 'react-router-dom';
 import Dashboard from './components/Dashboard';
 
-export default function ButtonAppBar() {
+// icons
+import ArrowBackIcon from '@material-ui/icons/ArrowBack';
+export default function App() {
+
+  const history = useHistory();
+
   return (
+    <Box sx={{ flexGrow: 1 }}>
+      <AppBar position="static">
+        <Toolbar>
+          <IconButton
+            size="large"
+            onClick={() => history.goBack()}
+          >
+            <ArrowBackIcon />
+          </IconButton>
 
-      <Box sx={{ flexGrow: 1 }}>
-        <AppBar position="static">
-          <Toolbar>
-            <IconButton
-              size="large"
-              edge="start"
-              color="inherit"
-              aria-label="menu"
-              sx={{ mr: 2 }}
-            >
-              <MenuIcon />
-            </IconButton>
-            <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-              News
-            </Typography>
-            <Button color="inherit">Login</Button>
-          </Toolbar>
-        </AppBar>
+          <Button 
+            color="inherit"
+            onClick={() => history.push('/home')}
+          >
+            Home
+          </Button>
 
-        <div style={{padding: '5%'}}>
-          <Dashboard />
-        </div>
-      </Box>
+          <Button 
+            color="inherit"
+            onClick={() => alert('implement this button...')}
+          >
+            Login
+          </Button>
+
+        </Toolbar>
+      </AppBar>
+
+      <div style={{padding: '5%'}}>
+        <Dashboard />
+      </div>
+    </Box>
   );
 }
