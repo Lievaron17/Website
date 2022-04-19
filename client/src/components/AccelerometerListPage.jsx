@@ -9,7 +9,6 @@ function callApi(acc_id){
   fetch(`http://localhost:3000/getirt/${id}`, {method: 'GET'})
   .then(response => response.json())
   .then(data => {
-    console.log(data)
     alert(data.irt.vehicle_id)
   })
 
