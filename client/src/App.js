@@ -4,9 +4,11 @@ import {
   IconButton,
   Button,
   Toolbar,
+  Typography,
 } from '@material-ui/core';
 import { useHistory } from 'react-router-dom';
 import Dashboard from './components/Dashboard';
+
 
 // icons
 import ArrowBackIcon from '@material-ui/icons/ArrowBack';
@@ -25,19 +27,24 @@ export default function App() {
             <ArrowBackIcon />
           </IconButton>
 
-          <Button 
+          <Button
             color="inherit"
             onClick={() => history.push('/home')}
           >
-            Home
+            Home 
           </Button>
 
-          <Button 
+          <Button variant="h6" component="div" sx={{ flexGrow: 1 }}
             color="inherit"
-            onClick={() => alert('implement this button...')}
+            onClick= {() => history.push('/contact-us')}
           >
-            Login
+            Contact Us 
           </Button>
+
+          <Typography>
+            
+            Institute of Railway Technology (IRT) Database
+          </Typography>
 
         </Toolbar>
       </AppBar>

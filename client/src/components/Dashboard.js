@@ -1,5 +1,4 @@
 import {
-  BrowserRouter as Router,
   Switch,
   Route,
   Redirect,
@@ -8,11 +7,14 @@ import {
 import Home from './Home';
 import ErrorBoundary from './ErrorBoundary';
 import AccelerometerListPage from './AccelerometerListPage';
+import DrawbarListPage from './DrawbarListPage';
+import SpringListPage from './SpringListPage';
+import SteerListPage from './SteerListPage';
+import Contact from './contact_us';
 
 export default function Dashboard() {
 
   return (
-    // <Router>
       <ErrorBoundary>
         <Switch>
           
@@ -24,23 +26,26 @@ export default function Dashboard() {
             <AccelerometerListPage />
           </Route>
 
-          <Route path="/instrumental-drawbar">
-            <h1>Hello from instrumental drawbar</h1>
+          <Route path="/instrumented-drawbar">
+            <DrawbarListPage/>
           </Route>
           
           <Route path="/suspension-string">
-            <h1>Hello from suspension string</h1>
+            <SpringListPage/>
           </Route>
 
           <Route path="/steer-sensor">
-            <h1>Hello from steer sensor</h1>
+            <SteerListPage/>
+          </Route>
+
+          <Route path="/contact-us">
+            <Contact/>
           </Route>
 
           <Redirect path="/" to="/home" />
 
         </Switch>
       </ErrorBoundary>
-    // </Router>
   );
 }
 

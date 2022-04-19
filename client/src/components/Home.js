@@ -22,7 +22,7 @@ export default function Home () {
       </Grid>
 
       <Grid item xs={12}>
-        <h3>List of all the sensosts available in a train wagon:</h3>
+        <h3>List of all the sensors available in a train wagon:</h3>
       </Grid>
 
       <Grid item xs={12}>
@@ -41,9 +41,9 @@ export default function Home () {
           fullWidth
           className={classes.button}
           variant="contained"
-          onClick={() => history.push('/instrumental-drawbar')}
+          onClick={() => history.push('/instrumented-drawbar')}
         >
-          Instrumental Drawbar
+          Instrumented Drawbar
         </Button>
       </Grid>
 

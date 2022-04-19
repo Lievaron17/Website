@@ -3,18 +3,29 @@ import {
   Button,
   makeStyles,
 } from '@material-ui/core';
-import { useState } from 'react';
-import AccelerometerItem from './AccelerometerItem';
 
-export default function Accelerometer() {
+function callApi(acc_id){
+  const id = acc_id;
+  fetch(`http://localhost:3000/getirt/${id}`, {method: 'GET'})
+  .then(response => response.json())
+  .then(data => {
+    console.log(data)
+    alert(data.irt.vehicle_id)
+  })
+
+  // how to redirect to another page in react from a function
+
+  //use this reference : https://mocki.io/call-a-rest-api-in-react
+
+}
+
+export default function Irt() {
 
   const classes = useStyles();
 
-  const [accelerometerId, setAccelerometerId] = useState();
-
   return (
+    
     <>
-      <AccelerometerItem id={accelerometerId} setId={setAccelerometerId}/>
       <Grid
         container
         spacing={2}
@@ -31,7 +42,7 @@ export default function Accelerometer() {
             fullWidth
             className={classes.button}
             variant="contained"
-            onClick={() => setAccelerometerId('S1111')}
+            onClick={() => callApi('S1111')}
           >
             Accelerometer S1111
           </Button>
@@ -42,7 +53,7 @@ export default function Accelerometer() {
             fullWidth
             className={classes.button}
             variant="contained"
-            onClick={() => setAccelerometerId('S2222')}
+            onClick={() => callApi('2222')}
           >
             Accelerometer S2222
           </Button>
@@ -53,7 +64,7 @@ export default function Accelerometer() {
             fullWidth
             className={classes.button}
             variant="contained"
-            onClick={() => setAccelerometerId('S3333')}
+            onClick={() => callApi('S3333')}
           >
             Accelerometer S3333
           </Button>
@@ -64,9 +75,29 @@ export default function Accelerometer() {
             fullWidth
             className={classes.button}
             variant="contained"
-            onClick={() => setAccelerometerId('S4444')}
+            onClick={() => callApi('S1234')}
           >
-            Accelerometer S4444
+            Accelerometer S1234
+          </Button>
+        </Grid>
+        <Grid item xs={6}>
+          <Button 
+            fullWidth
+            className={classes.button}
+            variant="contained"
+            onClick={() => callApi('S1235')}
+          >
+            Accelerometer S1235
+          </Button>
+        </Grid>
+        <Grid item xs={6}>
+          <Button 
+            fullWidth
+            className={classes.button}
+            variant="contained"
+            onClick={() => callApi('S1236')}
+          >
+            Accelerometer S1236
           </Button>
         </Grid>
 
