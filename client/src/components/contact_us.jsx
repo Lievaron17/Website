@@ -19,13 +19,20 @@ function Contact(){
       <Grid item xs={12} style={{display: 'flex', justifyContent: 'center'}}>
         <h3>Email: irt.enquiries@monash.edu</h3>
       </Grid>
+      <Grid item xs = {4}>
 
-      <Grid item xs={4} style={{display: 'flex', justifyContent: 'center', textAlign: 'center', width: 50}}>
-        <h3>Postal Address:
+      </Grid>
+      <Grid item xs={4} style={{display: 'flex', justifyContent: 'center', textAlign: 'center'}}>
+       <div style ={{width:'50%'}}><h3>
+            Postal Address:
             Room G33, Building 31,
             17 College Walk,
             Monash University, Clayton Campus,
             Victoria 3800, Australia.</h3>
+            </div> 
+      </Grid>
+      <Grid item xs = {4}>
+
       </Grid>
     </Grid>
   );
