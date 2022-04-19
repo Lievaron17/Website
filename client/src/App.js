@@ -18,7 +18,7 @@ export default function App() {
 
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static">
+      <AppBar>
         <Toolbar>
           <IconButton
             size="large"
@@ -34,7 +34,7 @@ export default function App() {
             Home 
           </Button>
 
-          <Button variant="h6" component="div" sx={{ flexGrow: 1 }}
+          <Button 
             color="inherit"
             onClick= {() => history.push('/contact-us')}
           >
@@ -42,11 +42,11 @@ export default function App() {
           </Button>
 
           <Typography>
-            
             Institute of Railway Technology (IRT) Database
           </Typography>
 
         </Toolbar>
+        
       </AppBar>
 
       <div style={{padding: '5%'}}>

@@ -50,7 +50,7 @@ import {
               fullWidth
               className={classes.button}
               variant="contained"
-              onClick={() => callApi('1113')}
+              onClick={() => callApi('S1113')}
             >
               Instrumented Drawbar S1113
             </Button>

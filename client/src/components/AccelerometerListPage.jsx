@@ -52,7 +52,7 @@ export default function Irt() {
             fullWidth
             className={classes.button}
             variant="contained"
-            onClick={() => callApi('2222')}
+            onClick={() => callApi('S2222')}
           >
             Accelerometer S2222
           </Button>
