@@ -4,13 +4,16 @@ import {
   makeStyles,
 } from '@material-ui/core';
 
+import { Link } from 'react-router-dom';
+
 function callApi(acc_id){
   const id = acc_id;
   fetch(`http://localhost:3000/getirt/${id}`, {method: 'GET'})
   .then(response => response.json())
   .then(data => {
     alert(data.irt.vehicle_id)
-  })
+  });
+  <Link to='/test'> hello </Link>
 
   // how to redirect to another page in react from a function
 
@@ -96,7 +99,7 @@ export default function Irt() {
             variant="contained"
             onClick={() => callApi('S1236')}
           >
-            Accelerometer S1236
+             Accelerometer S1236
           </Button>
         </Grid>
 
@@ -119,6 +122,7 @@ const useStyles = makeStyles((theme) => ({
     borderRadius: 10,
     backgroundColor: "#5E8ACF",
     padding: "18px 36px",
-    fontSize: "18px"
-  },
+    fontSize: "18px",
+    color: "white"
+  }
 }));

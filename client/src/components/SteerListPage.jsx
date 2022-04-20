@@ -117,6 +117,7 @@ import {
       borderRadius: 10,
       backgroundColor: "#5E8ACF",
       padding: "18px 36px",
-      fontSize: "18px"
+      fontSize: "18px",
+      color: "white"
     },
   }));
