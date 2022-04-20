@@ -14,6 +14,8 @@ const useStyles = makeStyles(theme => ({
   container: {
     background: "#5E8ACF",
     borderRadius: "30px",
+    marginTop : "50px"
+
   },
   text: {
     color: "white",

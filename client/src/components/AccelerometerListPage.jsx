@@ -4,17 +4,15 @@ import {
   makeStyles,
 } from '@material-ui/core';
 
-import { Link } from 'react-router-dom';
+import { Link, Redirect } from 'react-router-dom';
 
 function callApi(acc_id){
   const id = acc_id;
   fetch(`http://localhost:3000/getirt/${id}`, {method: 'GET'})
-  .then(response => response.json())
-  .then(data => {
-    alert(data.irt.vehicle_id)
-  });
-  <Link to='/test'> hello </Link>
-
+  .then(response => response.json());
+  //.then(data => {data.irt.vehicle_id});
+  <Redirect to="/test"/>;
+  
   // how to redirect to another page in react from a function
 
   //use this reference : https://mocki.io/call-a-rest-api-in-react
