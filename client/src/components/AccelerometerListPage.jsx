@@ -4,28 +4,21 @@ import {
   makeStyles,
 } from '@material-ui/core';
 
-import { Link, Redirect } from 'react-router-dom';
+import { Route, useHistory } from 'react-router-dom';
+import AccelerometerDetail from './AccelerometerDetail';
 
-function callApi(acc_id){
-  const id = acc_id;
-  fetch(`http://localhost:3000/getirt/${id}`, {method: 'GET'})
-  .then(response => response.json());
-  //.then(data => {data.irt.vehicle_id});
-  <Redirect to="/test"/>;
-  
-  // how to redirect to another page in react from a function
 
-  //use this reference : https://mocki.io/call-a-rest-api-in-react
-
-}
 
 export default function Irt() {
 
   const classes = useStyles();
+  const history = useHistory();
 
   return (
     
     <>
+   
+
       <Grid
         container
         spacing={2}
@@ -42,10 +35,12 @@ export default function Irt() {
             fullWidth
             className={classes.button}
             variant="contained"
-            onClick={() => callApi('S1111')}
+            onClick={() => history.push({pathname: '/accelerometerdetail',
+            state: { detail: 'S1111' }})}
           >
             Accelerometer S1111
           </Button>
+          
         </Grid>
 
         <Grid item xs={6}>
@@ -53,7 +48,8 @@ export default function Irt() {
             fullWidth
             className={classes.button}
             variant="contained"
-            onClick={() => callApi('S2222')}
+            onClick={() => history.push({pathname: '/accelerometerdetail',
+            state: { detail: 'S2222' }})}
           >
             Accelerometer S2222
           </Button>
@@ -64,7 +60,8 @@ export default function Irt() {
             fullWidth
             className={classes.button}
             variant="contained"
-            onClick={() => callApi('S3333')}
+            onClick={() => history.push({pathname: '/accelerometerdetail',
+            state: { detail: 'S3333' }})}
           >
             Accelerometer S3333
           </Button>
@@ -75,7 +72,8 @@ export default function Irt() {
             fullWidth
             className={classes.button}
             variant="contained"
-            onClick={() => callApi('S1234')}
+            onClick={() => history.push({pathname: '/accelerometerdetail',
+            state: { detail: 'S1234' }})}
           >
             Accelerometer S1234
           </Button>
@@ -85,7 +83,8 @@ export default function Irt() {
             fullWidth
             className={classes.button}
             variant="contained"
-            onClick={() => callApi('S1235')}
+            onClick={() => history.push({pathname: '/accelerometerdetail',
+            state: { detail: 'S1235' }})}
           >
             Accelerometer S1235
           </Button>
@@ -95,7 +94,8 @@ export default function Irt() {
             fullWidth
             className={classes.button}
             variant="contained"
-            onClick={() => callApi('S1236')}
+            onClick={() => history.push({pathname: '/accelerometerdetail',
+            state: { detail: 'S1236' }})}
           >
              Accelerometer S1236
           </Button>

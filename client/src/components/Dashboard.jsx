@@ -11,6 +11,7 @@ import DrawbarListPage from './DrawbarListPage';
 import SpringListPage from './SpringListPage';
 import SteerListPage from './SteerListPage';
 import Contact from './contact_us';
+import AccelerometerDetail from './AccelerometerDetail';
 
 export default function Dashboard() {
 
@@ -21,6 +22,10 @@ export default function Dashboard() {
           <Route path="/home">
             <Home />
           </Route>
+
+          <Route path="/accelerometerdetail">
+           <AccelerometerDetail />
+           </Route>
 
           <Route path="/accelerometer">
             <AccelerometerListPage />
