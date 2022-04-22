@@ -14,13 +14,15 @@ import {
     
     fetch(`http://localhost:3000/getirt/${id}`, {method: 'GET'})
     .then(response => response.json())
-    .then(data => alert(data.irt.vehicle_id))
+    .then(data => 
+      {this.setState({ accelerometer: data})});
+
+      //console.log(accelerometer);
+
 
     //const test = data.irt.vehicle_id;
 
-    return (
-      test
-    );
+  
     //.then(data => {data.irt.vehicle_id});
     //<Redirect to="/test"/>;
     
@@ -34,16 +36,15 @@ import {
       const classes = useStyles();
       const location = useLocation();
 
-      const data = callApi(location.state.detail); 
+      callApi(location.state.detail); 
 
-      console.log(data);
   
+    
     return (
 
-      
-      
       <h1> hello </h1>
 
+  
     );
   };
   
