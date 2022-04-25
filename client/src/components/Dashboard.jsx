@@ -5,7 +5,7 @@ import {
 } from 'react-router-dom';
 
 import Home from './Home';
-import ErrorBoundary from './ErrorBoundary';
+// import ErrorBoundary from './ErrorBoundary';
 import AccelerometerListPage from './AccelerometerListPage';
 import DrawbarListPage from './DrawbarListPage';
 import SpringListPage from './SpringListPage';
@@ -16,7 +16,7 @@ import AccelerometerDetail from './AccelerometerDetail';
 export default function Dashboard() {
 
   return (
-      <ErrorBoundary>
+      // <ErrorBoundary>
         <Switch>
           
           <Route path="/home">
@@ -50,7 +50,7 @@ export default function Dashboard() {
           <Redirect path="/" to="/home" />
 
         </Switch>
-      </ErrorBoundary>
+      // </ErrorBoundary>
   );
 }
 
