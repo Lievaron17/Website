@@ -10,23 +10,31 @@ import {
 import { render } from '@testing-library/react';
 
 function Call_api(acc_id){
-  const [data,setData] = useState([])
-  const id = acc_id;
+
+  
+  const [datas,setData] = useState(null)
+  const location = useLocation();
+
+  const id = location.state.detail;
   useEffect(()=>{
-    const url = "http://localhost:3000/getirt/S1111";
-    fetch(url).then(response=>response.json())
-    .then(response=>setData(response))
+    const url = `http://localhost:3000/getirt/${id}`;
+    fetch(url).then(resp=>resp.json())
+    .then(resp=>setData(resp))
   },[])
-  return(
-    <div className = "Call_api">
-      <h1 align ="center">Data</h1>
-      {
-        data.map(data=>
-        {return(<h1>{data.irt._id}
-        </h1>)})
-      }
-    </div>
-  )
+
+  
+  if (datas){
+    return(
+      <div>
+        <h1>{datas.irt.sensor_number}</h1>
+        <h1>{datas.irt.vehicle_id}</h1>
+        <h1>{datas.irt.manufacture_date}</h1>
+        <h1>{datas.irt.calibration_date}</h1>
+      </div>
+     )
+
+  }
+  
 }
 
 export default Call_api;
