@@ -3,32 +3,22 @@ import {
     Button,
     makeStyles,
   } from '@material-ui/core';
+
+import { useHistory } from 'react-router-dom';
+
+export default function Drawbar() {
   
-  function callApi(acc_id){
-    const id = acc_id;
-    fetch(`http://localhost:3000/getdrawbar/${id}`, {method: 'GET'})
-    .then(response => response.json())
-    .then(data => alert(data.drawbar.vehicle_id))
+  const classes = useStyles();
+  const history = useHistory();
   
-    // how to redirect to another page in react from a function
-  
-    //use this reference : https://mocki.io/call-a-rest-api-in-react
-  
-  }
-  
-  export default function Drawbar() {
-  
-    const classes = useStyles();
-  
-    return (
-      
-      <>
-        <Grid
-          container
-          spacing={2}
-          className={classes.gridContainer}
-          justify="center"
-        >
+  return (
+    <>
+      <Grid
+        container
+        spacing={2}
+        className={classes.gridContainer}
+        justify="center"
+      >
   
           <Grid item xs={12}>
             <h1>Instrumented Drawbar</h1>
@@ -39,7 +29,9 @@ import {
               fullWidth
               className={classes.button}
               variant="contained"
-              onClick={() => callApi('S1112')}
+              style={{backgroundColor: "#0992DF"}}
+              onClick={() => history.push({pathname: '/drawbardetail',
+              state: { detail: 'S1112' }})}
             >
               Instrumented Drawbar S1112
             </Button>
@@ -50,7 +42,9 @@ import {
               fullWidth
               className={classes.button}
               variant="contained"
-              onClick={() => callApi('S1113')}
+              style={{backgroundColor: "#0992DF"}}
+              onClick={() => history.push({pathname: '/drawbardetail',
+              state: { detail: 'S1113' }})}
             >
               Instrumented Drawbar S1113
             </Button>
@@ -61,7 +55,9 @@ import {
               fullWidth
               className={classes.button}
               variant="contained"
-              onClick={() => callApi('S1114')}
+              style={{backgroundColor: "#0992DF"}}
+              onClick={() => history.push({pathname: '/drawbardetail',
+              state: { detail: 'S1114' }})}
             >
               Instrumented Drawbar S1114
             </Button>
@@ -72,7 +68,9 @@ import {
               fullWidth
               className={classes.button}
               variant="contained"
-              onClick={() => callApi('S1115')}
+              style={{backgroundColor: "#0992DF"}}
+              onClick={() => history.push({pathname: '/drawbardetail',
+              state: { detail: 'S1115' }})}
             >
               Instrumented Drawbar S1115
             </Button>
@@ -82,7 +80,9 @@ import {
               fullWidth
               className={classes.button}
               variant="contained"
-              onClick={() => callApi('S1116')}
+              style={{backgroundColor: "#0992DF"}}
+              onClick={() => history.push({pathname: '/drawbardetail',
+              state: { detail: 'S1116' }})}
             >
               Instrumented Drawbar S1116
             </Button>
@@ -92,7 +92,9 @@ import {
               fullWidth
               className={classes.button}
               variant="contained"
-              onClick={() => callApi('S1117')}
+              style={{backgroundColor: "#0992DF"}}
+              onClick={() => history.push({pathname: '/drawbardetail',
+              state: { detail: 'S1117' }})}
             >
               Instrumented Drawbar S1117
             </Button>
@@ -104,7 +106,7 @@ import {
   }
   
   // constants
-  const useStyles = makeStyles((theme) => ({
+  const useStyles = makeStyles(() => ({
     gridContainer: {
       padding: '5%',
       alignItems: 'center',

@@ -4,21 +4,12 @@ import {
     makeStyles,
   } from '@material-ui/core';
   
-  function callApi(acc_id){
-    const id = acc_id;
-    fetch(`http://localhost:3000/getsteer/${id}`, {method: 'GET'})
-    .then(response => response.json())
-    .then(data => alert(data.steer.vehicle_id))
-  
-    // how to redirect to another page in react from a function
-  
-    //use this reference : https://mocki.io/call-a-rest-api-in-react
-  
-  }
+  import { useHistory } from 'react-router-dom';
   
   export default function Steer() {
   
     const classes = useStyles();
+    const history = useHistory();
   
     return (
       
@@ -39,7 +30,9 @@ import {
               fullWidth
               className={classes.button}
               variant="contained"
-              onClick={() => callApi('S1212')}
+              style={{backgroundColor: "#0992DF"}}
+              onClick={() => history.push({pathname: '/steerdetail',
+              state: { detail: 'S1212' }})}
             >
               Steer Sensor S1212
             </Button>
@@ -50,7 +43,9 @@ import {
               fullWidth
               className={classes.button}
               variant="contained"
-              onClick={() => callApi('S1313')}
+              style={{backgroundColor: "#0992DF"}}
+              onClick={() => history.push({pathname: '/steerdetail',
+              state: { detail: 'S1313' }})}
             >
               Steer Sensor S1313
             </Button>
@@ -61,7 +56,9 @@ import {
               fullWidth
               className={classes.button}
               variant="contained"
-              onClick={() => callApi('S1414')}
+              style={{backgroundColor: "#0992DF"}}
+              onClick={() => history.push({pathname: '/steerdetail',
+              state: { detail: 'S1414' }})}
             >
               Steer Sensor S1414
             </Button>
@@ -72,7 +69,9 @@ import {
               fullWidth
               className={classes.button}
               variant="contained"
-              onClick={() => callApi('S1515')}
+              style={{backgroundColor: "#0992DF"}}
+              onClick={() => history.push({pathname: '/steerdetail',
+              state: { detail: 'S1515' }})}
             >
               Steer Sensor S1515
             </Button>
@@ -82,7 +81,9 @@ import {
               fullWidth
               className={classes.button}
               variant="contained"
-              onClick={() => callApi('S1616')}
+              style={{backgroundColor: "#0992DF"}}
+              onClick={() => history.push({pathname: '/steerdetail',
+              state: { detail: 'S1616' }})}
             >
               Steer Sensor S1616
             </Button>
@@ -92,7 +93,9 @@ import {
               fullWidth
               className={classes.button}
               variant="contained"
-              onClick={() => callApi('S1717')}
+              style={{backgroundColor: "#0992DF"}}
+              onClick={() => history.push({pathname: '/steerdetail',
+              state: { detail: 'S1717' }})}
             >
               Steer Sensor S1717
             </Button>
@@ -104,7 +107,7 @@ import {
   }
   
   // constants
-  const useStyles = makeStyles((theme) => ({
+  const useStyles = makeStyles(() => ({
     gridContainer: {
       padding: '5%',
       alignItems: 'center',

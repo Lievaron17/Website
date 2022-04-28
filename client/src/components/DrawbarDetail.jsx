@@ -24,7 +24,7 @@ const useStyles = makeStyles(() => ({
     fontSize: "35px",
     justifyContent: 'center'
   },
-   button: {
+  button: {
     borderRadius: 5,
      backgroundColor: "#0992DF",
      color: "white",
@@ -39,14 +39,13 @@ const useStyles = makeStyles(() => ({
 
 
 function Call_api(){
-
   const classes = useStyles();
   const [data,setData] = useState(null)
   const location = useLocation();
 
   const id = location.state.detail;
   useEffect(()=>{
-    const url = `http://localhost:3000/getirt/${id}`;
+    const url = `http://localhost:3000/getdrawbar/${id}`;
     fetch(url).then(resp=>resp.json())
     .then(resp=>setData(resp))
   },[])
@@ -60,17 +59,17 @@ function Call_api(){
     <Grid container xs={12} className={classes.container} >
 
       <Grid item xs={12} style={{display: 'flex', justifyContent: 'center'}}>
-         <h1> Accelerometer {data.irt.sensor_number} </h1>
+         <h1> Instrumented Drawbar {data.drawbar.sensor_number} </h1>
       </Grid>
       
-      <Grid item xs={12} style={{display: 'flex', justifyContent: 'center'}}>
+      <Grid item xs={12} style = {{display: 'flex', justifyContent: 'left', marginLeft: '400px'}}>
         <h2> 
-          Purpose : Measure the vibration/ shock through the wheels <br/><br/>
-          IRT ID : {data.irt.sensor_number} <br/><br/>
-          Vehicle ID: {data.irt.vehicle_id} <br/><br/>
-          Installation Date : {data.irt.manufacture_date.slice(0,10)} <br/><br/>
-          Callibration Date : {data.irt.calibration_date.slice(0,10)} <br/><br/>
-          Status Check : {data.irt.status} <br/>
+          Purpose : Measure in-train forces <br/><br/>
+          IRT ID : {data.drawbar.sensor_number} <br/><br/>
+          Vehicle ID: {data.drawbar.vehicle_id} <br/><br/>
+          Installation Date : {data.drawbar.manufacture_date.slice(0,10)} <br/><br/>
+          Callibration Date : {data.drawbar.calibration_date.slice(0,10)} <br/><br/>
+          Status Check : {data.drawbar.status} <br/>
         </h2>
       </Grid>
       

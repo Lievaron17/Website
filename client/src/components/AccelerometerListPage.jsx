@@ -4,10 +4,7 @@ import {
   makeStyles,
 } from '@material-ui/core';
 
-import { Route, useHistory } from 'react-router-dom';
-import AccelerometerDetail from './AccelerometerDetail';
-
-
+import { useHistory } from 'react-router-dom';
 
 export default function Irt() {
 
@@ -15,10 +12,7 @@ export default function Irt() {
   const history = useHistory();
 
   return (
-    
     <>
-   
-
       <Grid
         container
         spacing={2}
@@ -35,6 +29,7 @@ export default function Irt() {
             fullWidth
             className={classes.button}
             variant="contained"
+            style={{backgroundColor: "#0992DF"}}
             onClick={() => history.push({pathname: '/accelerometerdetail',
             state: { detail: 'S1111' }})}
           >
@@ -48,6 +43,7 @@ export default function Irt() {
             fullWidth
             className={classes.button}
             variant="contained"
+            style={{backgroundColor: "#0992DF"}}
             onClick={() => history.push({pathname: '/accelerometerdetail',
             state: { detail: 'S2222' }})}
           >
@@ -60,6 +56,7 @@ export default function Irt() {
             fullWidth
             className={classes.button}
             variant="contained"
+            style={{backgroundColor: "#0992DF"}}
             onClick={() => history.push({pathname: '/accelerometerdetail',
             state: { detail: 'S3333' }})}
           >
@@ -72,6 +69,7 @@ export default function Irt() {
             fullWidth
             className={classes.button}
             variant="contained"
+            style={{backgroundColor: "#0992DF"}}
             onClick={() => history.push({pathname: '/accelerometerdetail',
             state: { detail: 'S1234' }})}
           >
@@ -83,6 +81,7 @@ export default function Irt() {
             fullWidth
             className={classes.button}
             variant="contained"
+            style={{backgroundColor: "#0992DF"}}
             onClick={() => history.push({pathname: '/accelerometerdetail',
             state: { detail: 'S1235' }})}
           >
@@ -94,6 +93,7 @@ export default function Irt() {
             fullWidth
             className={classes.button}
             variant="contained"
+            style={{backgroundColor: "#0992DF"}}
             onClick={() => history.push({pathname: '/accelerometerdetail',
             state: { detail: 'S1236' }})}
           >
@@ -107,7 +107,7 @@ export default function Irt() {
 }
 
 // constants
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles(() => ({
   gridContainer: {
     padding: '5%',
     alignItems: 'center',

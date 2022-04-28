@@ -30,6 +30,7 @@ export default function Home () {
           fullWidth
           className={classes.button}
           variant="contained"
+          style={{backgroundColor: "#0992DF"}}
           onClick={() => history.push('/accelerometer')}
         >
           Accelerometer
@@ -41,6 +42,7 @@ export default function Home () {
           fullWidth
           className={classes.button}
           variant="contained"
+          style={{backgroundColor: "#0992DF"}}
           onClick={() => history.push('/instrumented-drawbar')}
         >
           Instrumented Drawbar
@@ -52,6 +54,7 @@ export default function Home () {
           fullWidth
           className={classes.button}
           variant="contained"
+          style={{backgroundColor: "#0992DF"}}
           onClick={() => history.push('/suspension-string')}
         >
           Instrumented Suspension Spring
@@ -63,6 +66,7 @@ export default function Home () {
           fullWidth
           className={classes.button}
           variant="contained"
+          style={{backgroundColor: "#0992DF"}}
           onClick={() => history.push('/steer-sensor')}
         >
           Steer Sensor

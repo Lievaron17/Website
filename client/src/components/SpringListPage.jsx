@@ -4,21 +4,12 @@ import {
     makeStyles,
   } from '@material-ui/core';
   
-  function callApi(acc_id){
-    const id = acc_id;
-    fetch(`http://localhost:3000/getspring/${id}`, {method: 'GET'})
-    .then(response => response.json())
-    .then(data => alert(data.spring.vehicle_id))
-  
-    // how to redirect to another page in react from a function
-  
-    //use this reference : https://mocki.io/call-a-rest-api-in-react
-  
-  }
-  
+  import { useHistory } from 'react-router-dom';
+
   export default function Spring() {
   
-    const classes = useStyles();
+  const classes = useStyles();
+  const history = useHistory();
   
     return (
       
@@ -39,7 +30,9 @@ import {
               fullWidth
               className={classes.button}
               variant="contained"
-              onClick={() => callApi('S1121')}
+              style={{backgroundColor: "#0992DF"}}
+              onClick={() => history.push({pathname: '/springdetail',
+              state: { detail: 'S1121' }})}
             >
               Instrumented Suspension Spring S1121
             </Button>
@@ -50,7 +43,9 @@ import {
               fullWidth
               className={classes.button}
               variant="contained"
-              onClick={() => callApi('S1122')}
+              style={{backgroundColor: "#0992DF"}}
+              onClick={() => history.push({pathname: '/springdetail',
+              state: { detail: 'S1122' }})}
             >
               Instrumented Suspension Spring S1122
             </Button>
@@ -61,7 +56,9 @@ import {
               fullWidth
               className={classes.button}
               variant="contained"
-              onClick={() => callApi('S1123')}
+              style={{backgroundColor: "#0992DF"}}
+              onClick={() => history.push({pathname: '/springdetail',
+              state: { detail: 'S1123' }})}
             >
               Instrumented Suspension Spring S1123
             </Button>
@@ -72,7 +69,9 @@ import {
               fullWidth
               className={classes.button}
               variant="contained"
-              onClick={() => callApi('S1124')}
+              style={{backgroundColor: "#0992DF"}}
+              onClick={() => history.push({pathname: '/springdetail',
+              state: { detail: 'S1124' }})}
             >
               Instrumented Suspension Spring S1124
             </Button>
@@ -82,7 +81,9 @@ import {
               fullWidth
               className={classes.button}
               variant="contained"
-              onClick={() => callApi('S1125')}
+              style={{backgroundColor: "#0992DF"}}
+              onClick={() => history.push({pathname: '/springdetail',
+              state: { detail: 'S1125' }})}
             >
               Instrumented Suspension Spring S1125
             </Button>
@@ -92,7 +93,9 @@ import {
               fullWidth
               className={classes.button}
               variant="contained"
-              onClick={() => callApi('S1126')}
+              style={{backgroundColor: "#0992DF"}}
+              onClick={() => history.push({pathname: '/springdetail',
+              state: { detail: 'S1126' }})}
             >
               Instrumented Suspension Spring S1126
             </Button>
@@ -104,7 +107,7 @@ import {
   }
   
   // constants
-  const useStyles = makeStyles((theme) => ({
+  const useStyles = makeStyles(() => ({
     gridContainer: {
       padding: '5%',
       alignItems: 'center',

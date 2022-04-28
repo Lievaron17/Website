@@ -34,7 +34,7 @@ export default function Contact() {
     <Grid>
       <h1 className={classes.header}> Contact Us</h1>
     </Grid>
-    <Grid container xs={12} className={classes.container} >
+    <Grid container xs={12} className={classes.container} style={{backgroundColor: "#0992DF"}}>
 
       <Grid item xs={12} style={{display: 'flex', justifyContent: 'center'}}>
         <h3 className= {classes.text}> 

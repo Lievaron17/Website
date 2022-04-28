@@ -5,18 +5,22 @@ import {
 } from 'react-router-dom';
 
 import Home from './Home';
-// import ErrorBoundary from './ErrorBoundary';
+import ErrorBoundary from './ErrorBoundary';
 import AccelerometerListPage from './AccelerometerListPage';
 import DrawbarListPage from './DrawbarListPage';
 import SpringListPage from './SpringListPage';
 import SteerListPage from './SteerListPage';
 import Contact from './contact_us';
 import AccelerometerDetail from './AccelerometerDetail';
+import DrawbarDetail from './DrawbarDetail';
+import SpringDetail from './SpringDetail';
+import SteerDetail from './SteerDetail';
+
 
 export default function Dashboard() {
 
   return (
-      // <ErrorBoundary>
+       <ErrorBoundary>
         <Switch>
           
           <Route path="/home">
@@ -31,12 +35,24 @@ export default function Dashboard() {
             <AccelerometerListPage />
           </Route>
 
+          <Route path="/drawbardetail">
+            <DrawbarDetail/>
+          </Route>
+
           <Route path="/instrumented-drawbar">
             <DrawbarListPage/>
           </Route>
-          
+
+          <Route path="/springdetail">
+            <SpringDetail/>
+          </Route>
+
           <Route path="/suspension-string">
             <SpringListPage/>
+          </Route>
+
+          <Route path="/steerdetail">
+            <SteerDetail/>
           </Route>
 
           <Route path="/steer-sensor">
@@ -50,7 +66,7 @@ export default function Dashboard() {
           <Redirect path="/" to="/home" />
 
         </Switch>
-      // </ErrorBoundary>
+       </ErrorBoundary>
   );
 }
 

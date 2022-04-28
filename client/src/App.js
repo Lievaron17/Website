@@ -22,7 +22,7 @@ const useStyles = makeStyles(theme => ({
     boxShadow: 'none',
     position: '-webkit-sticky',
     [theme.breakpoints.down('sm')]: {
-      height: 170
+    height: 170
     },
   },
   title: {
@@ -54,7 +54,7 @@ export default function App() {
 
   return (
     <Box>
-      <AppBar position="fixed" className={classes.navBar}>
+      <AppBar position="fixed" style={{backgroundColor: "#0992DF"}} className={classes.navBar}>
         <Toolbar>
             <div className={classes.title}>
               <IconButton size="large" onClick={() => history.goBack()}>
