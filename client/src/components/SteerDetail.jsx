@@ -64,7 +64,7 @@ function Call_api(){
       
       <Grid item xs={12} style = {{display: 'flex', justifyContent: 'left', marginLeft: '400px'}}>
         <h2> 
-          Purpose : Measure the speed of the train <br/><br/>
+          Purpose : Measure the rotation of the bogie <br/><br/>
           IRT ID : {data.steer.sensor_number} <br/><br/>
           Vehicle ID: {data.steer.vehicle_id} <br/><br/>
           Installation Date : {data.steer.manufacture_date.slice(0,10)} <br/><br/>
