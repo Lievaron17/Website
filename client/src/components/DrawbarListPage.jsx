@@ -30,8 +30,7 @@ export default function Drawbar() {
               className={classes.button}
               variant="contained"
               style={{backgroundColor: "#0992DF"}}
-              onClick={() => history.push({pathname: '/drawbardetail',
-              state: { detail: 'S1112' }})}
+              onClick={() => history.push('/drawbars1112')}
             >
               Instrumented Drawbar S1112
             </Button>

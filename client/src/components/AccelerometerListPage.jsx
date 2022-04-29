@@ -30,8 +30,7 @@ export default function Irt() {
             className={classes.button}
             variant="contained"
             style={{backgroundColor: "#0992DF"}}
-            onClick={() => history.push({pathname: '/accelerometerdetail',
-            state: { detail: 'S1111' }})}
+            onClick={() => history.push('/accelerometers1111')}
           >
             Accelerometer S1111
           </Button>
