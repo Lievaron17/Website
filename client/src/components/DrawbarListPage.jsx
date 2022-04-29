@@ -30,7 +30,8 @@ export default function Drawbar() {
               className={classes.button}
               variant="contained"
               style={{backgroundColor: "#0992DF"}}
-              onClick={() => history.push('/drawbars1112')}
+              onClick={() => history.push({pathname: '/drawbardetail',
+              state: { detail: 'S1112' }})}
             >
               Instrumented Drawbar S1112
             </Button>
@@ -68,7 +69,7 @@ export default function Drawbar() {
               className={classes.button}
               variant="contained"
               style={{backgroundColor: "#0992DF"}}
-              onClick={() => history.push({pathname: '/drawbardetail',
+              onClick={() => history.push({pathname: '/drawbars1115',
               state: { detail: 'S1115' }})}
             >
               Instrumented Drawbar S1115

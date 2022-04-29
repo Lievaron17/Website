@@ -16,7 +16,7 @@ import DrawbarDetail from './DrawbarDetail';
 import SpringDetail from './SpringDetail';
 import SteerDetail from './SteerDetail';
 import AccelerometerS1111 from './AccelerometerS1111';
-import DrawbarS1112 from './DrawbarS1112';
+import DrawbarS1115 from './DrawbarS1115';
 
 
 export default function Dashboard() {
@@ -41,8 +41,8 @@ export default function Dashboard() {
             <AccelerometerListPage />
           </Route>
 
-          <Route path="/drawbars1112">
-           <DrawbarS1112 />
+          <Route path="/drawbars1115">
+           <DrawbarS1115 />
            </Route>
 
           <Route path="/drawbardetail">

@@ -41,7 +41,7 @@ function Call_api(){
   const classes = useStyles();
   const [data,setData] = useState(null)
 
-  const id = 'S1112'
+  const id = 'S1115'
   useEffect(()=>{
     const url = `http://localhost:3000/getdrawbar/${id}`;
     fetch(url).then(resp=>resp.json())
