@@ -58,17 +58,17 @@ function Call_api(){
     <Grid container xs={12} className={classes.container} >
 
       <Grid item xs={12} style={{display: 'flex', justifyContent: 'center'}}>
-         <h1> Accelerometer {data.irt.sensor_number} </h1>
+         <h1> Accelerometer S1111 </h1>
       </Grid>
       
       <Grid item xs={12} style={{display: 'flex', justifyContent: 'center'}}>
         <h2> 
           Purpose : Measure the vibration / shock through the wheels <br/><br/>
-          IRT ID : {data.irt.sensor_number} <br/><br/>
-          Vehicle ID: {data.irt.vehicle_id} <br/><br/>
-          Installation Date : {data.irt.manufacture_date.slice(0,10)} <br/><br/>
-          Callibration Date : {data.irt.calibration_date.slice(0,10)} <br/><br/>
-          Status Check : {data.irt.status} <br/>
+          IRT ID : S1111 <br/><br/>
+          Vehicle ID: mtr01 <br/><br/>
+          Installation Date : 2019-06-29 <br/><br/>
+          Callibration Date : 2020-10-16 <br/><br/>
+          Status Check : goood <br/>
         </h2>
       </Grid>
       
