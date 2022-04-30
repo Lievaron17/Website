@@ -63,7 +63,7 @@ function Call_api(){
       
       <Grid item xs={12} style={{display: 'flex', justifyContent: 'center'}}>
         <h2> 
-          Purpose : Measure the vibration/ shock through the wheels <br/><br/>
+          Purpose : Measure the vibration / shock through the wheels <br/><br/>
           IRT ID : {data.irt.sensor_number} <br/><br/>
           Vehicle ID: {data.irt.vehicle_id} <br/><br/>
           Installation Date : {data.irt.manufacture_date.slice(0,10)} <br/><br/>
