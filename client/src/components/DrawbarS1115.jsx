@@ -1,4 +1,4 @@
-import React, {useEffect,useState} from 'react'
+// import React, {useEffect,useState} from 'react'
 import {
     Grid,
     Button,
@@ -98,7 +98,7 @@ export default function S1115(){
          <h1> Instrumented Drawbar S1115 </h1>
       </Grid>
       
-      <Grid item xs={12} style={{display: 'flex', justifyContent: 'center'}}>
+      <Grid item xs={12} style = {{display: 'flex', justifyContent: 'left', marginLeft: '400px'}}>
         <h2> 
           Purpose : Measure in-train forces <br/><br/>
           IRT ID : S1115 <br/><br/>
