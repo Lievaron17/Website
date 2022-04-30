@@ -50,7 +50,7 @@ export default function S1111(){
           Vehicle ID: mtr01 <br/><br/>
           Installation Date : 2019-06-29 <br/><br/>
           Callibration Date : 2020-10-16 <br/><br/>
-          Status Check : goood <br/>
+          Status Check : good <br/>
         </h2>
       </Grid>
       
