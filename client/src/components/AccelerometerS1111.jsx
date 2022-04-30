@@ -1,4 +1,3 @@
-import React, {useEffect,useState} from 'react'
 import {
     Grid,
     Button,
@@ -35,26 +34,9 @@ const useStyles = makeStyles(() => ({
     fontSize: "32px"
   },
 }));
-
-
-function Call_api(){
-
+export default function S1111(){
   const classes = useStyles();
-  const [data,setData] = useState(null)
-
-  const id = 'S1111';
-  useEffect(()=>{
-    const url = `http://localhost:3000/getirt/${id}`;
-    fetch(url).then(resp=>resp.json())
-    .then(resp=>setData(resp))
-  },[])
-
-  
-  if (data){
     return(
-
-
-
     <Grid container xs={12} className={classes.container} >
 
       <Grid item xs={12} style={{display: 'flex', justifyContent: 'center'}}>
@@ -83,9 +65,5 @@ function Call_api(){
     </Grid>
      
      )
-
   }
-  
-}
 
-export default Call_api;
