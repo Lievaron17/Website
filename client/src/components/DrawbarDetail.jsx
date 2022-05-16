@@ -64,7 +64,7 @@ function Call_api(){
       
       <Grid item xs={12} style = {{display: 'flex', justifyContent: 'left', marginLeft: '400px'}}>
         <h2> 
-          Purpose : Measure in-train forces <br/><br/>
+          Purpose : Measure in-train forces and indicate excessive braking or other issues <br/><br/>
           IRT ID : {data.drawbar.sensor_number} <br/><br/>
           Vehicle ID: {data.drawbar.vehicle_id} <br/><br/>
           Installation Date : {data.drawbar.manufacture_date.slice(0,10)} <br/><br/>
