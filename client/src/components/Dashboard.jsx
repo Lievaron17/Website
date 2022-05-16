@@ -17,6 +17,7 @@ import SpringDetail from './SpringDetail';
 import SteerDetail from './SteerDetail';
 import AccelerometerS1111 from './AccelerometerS1111';
 import DrawbarS1115 from './DrawbarS1115';
+import SteerS1717 from './SteerS1717';
 
 
 export default function Dashboard() {
@@ -59,6 +60,10 @@ export default function Dashboard() {
 
           <Route path="/suspension-string">
             <SpringListPage/>
+          </Route>
+
+          <Route path="/steers1717">
+            <SteerS1717/>
           </Route>
 
           <Route path="/steerdetail">

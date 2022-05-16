@@ -94,7 +94,7 @@ import {
               className={classes.button}
               variant="contained"
               style={{backgroundColor: "#0992DF"}}
-              onClick={() => history.push({pathname: '/steerdetail',
+              onClick={() => history.push({pathname: '/steers1717',
               state: { detail: 'S1717' }})}
             >
               Steer Sensor S1717
