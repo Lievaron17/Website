@@ -31,8 +31,9 @@ import {
               className={classes.button}
               variant="contained"
               style={{backgroundColor: "#0992DF"}}
-              onClick={() => history.push({pathname: '/springdetail',
-              state: { detail: 'S1121' }})}
+              // onClick={() => history.push({pathname: '/springdetail',
+              // state: { detail: 'S1121' }})}
+              onClick={() => history.push('/springs1121')}
             >
               Instrumented Suspension Spring S1121
             </Button>
@@ -44,8 +45,9 @@ import {
               className={classes.button}
               variant="contained"
               style={{backgroundColor: "#0992DF"}}
-              onClick={() => history.push({pathname: '/springdetail',
-              state: { detail: 'S1122' }})}
+              // onClick={() => history.push({pathname: '/springdetail',
+              // state: { detail: 'S1122' }})}
+              onClick={() => history.push('/springs1122')}
             >
               Instrumented Suspension Spring S1122
             </Button>
@@ -57,8 +59,9 @@ import {
               className={classes.button}
               variant="contained"
               style={{backgroundColor: "#0992DF"}}
-              onClick={() => history.push({pathname: '/springdetail',
-              state: { detail: 'S1123' }})}
+              // onClick={() => history.push({pathname: '/springdetail',
+              // state: { detail: 'S1123' }})}
+              onClick={() => history.push('/springs1123')}
             >
               Instrumented Suspension Spring S1123
             </Button>
@@ -70,8 +73,9 @@ import {
               className={classes.button}
               variant="contained"
               style={{backgroundColor: "#0992DF"}}
-              onClick={() => history.push({pathname: '/springdetail',
-              state: { detail: 'S1124' }})}
+              // onClick={() => history.push({pathname: '/springdetail',
+              // state: { detail: 'S1124' }})}
+              onClick={() => history.push('/springs1124')}
             >
               Instrumented Suspension Spring S1124
             </Button>
@@ -82,8 +86,9 @@ import {
               className={classes.button}
               variant="contained"
               style={{backgroundColor: "#0992DF"}}
-              onClick={() => history.push({pathname: '/springdetail',
-              state: { detail: 'S1125' }})}
+              // onClick={() => history.push({pathname: '/springdetail',
+              // state: { detail: 'S1125' }})}
+              onClick={() => history.push('/springs1125')}
             >
               Instrumented Suspension Spring S1125
             </Button>
@@ -94,8 +99,9 @@ import {
               className={classes.button}
               variant="contained"
               style={{backgroundColor: "#0992DF"}}
-              onClick={() => history.push({pathname: '/springdetail',
-              state: { detail: 'S1126' }})}
+              // onClick={() => history.push({pathname: '/springdetail',
+              // state: { detail: 'S1126' }})}
+              onClick={() => history.push('/springs1126')}
             >
               Instrumented Suspension Spring S1126
             </Button>

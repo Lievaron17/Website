@@ -30,8 +30,9 @@ export default function Drawbar() {
               className={classes.button}
               variant="contained"
               style={{backgroundColor: "#0992DF"}}
-              onClick={() => history.push({pathname: '/drawbardetail',
-              state: { detail: 'S1112' }})}
+              // onClick={() => history.push({pathname: '/drawbardetail',
+              // state: { detail: 'S1112' }})}
+              onClick={() => history.push('/drawbars1112')}
             >
               Instrumented Drawbar S1112
             </Button>
@@ -43,8 +44,9 @@ export default function Drawbar() {
               className={classes.button}
               variant="contained"
               style={{backgroundColor: "#0992DF"}}
-              onClick={() => history.push({pathname: '/drawbardetail',
-              state: { detail: 'S1113' }})}
+              // onClick={() => history.push({pathname: '/drawbardetail',
+              // state: { detail: 'S1113' }})}
+              onClick={() => history.push('/drawbars1113')}
             >
               Instrumented Drawbar S1113
             </Button>
@@ -56,8 +58,9 @@ export default function Drawbar() {
               className={classes.button}
               variant="contained"
               style={{backgroundColor: "#0992DF"}}
-              onClick={() => history.push({pathname: '/drawbardetail',
-              state: { detail: 'S1114' }})}
+              // onClick={() => history.push({pathname: '/drawbardetail',
+              // state: { detail: 'S1114' }})}
+              onClick={() => history.push('/drawbars1114')}
             >
               Instrumented Drawbar S1114
             </Button>
@@ -69,8 +72,9 @@ export default function Drawbar() {
               className={classes.button}
               variant="contained"
               style={{backgroundColor: "#0992DF"}}
-              onClick={() => history.push({pathname: '/drawbars1115',
-              state: { detail: 'S1115' }})}
+              // onClick={() => history.push({pathname: '/drawbars1115',
+              // state: { detail: 'S1115' }})}
+              onClick={() => history.push('/drawbars1115')}
             >
               Instrumented Drawbar S1115
             </Button>
@@ -81,8 +85,9 @@ export default function Drawbar() {
               className={classes.button}
               variant="contained"
               style={{backgroundColor: "#0992DF"}}
-              onClick={() => history.push({pathname: '/drawbardetail',
-              state: { detail: 'S1116' }})}
+              // onClick={() => history.push({pathname: '/drawbardetail',
+              // state: { detail: 'S1116' }})}
+              onClick={() => history.push('/drawbars1116')}
             >
               Instrumented Drawbar S1116
             </Button>
@@ -93,8 +98,9 @@ export default function Drawbar() {
               className={classes.button}
               variant="contained"
               style={{backgroundColor: "#0992DF"}}
-              onClick={() => history.push({pathname: '/drawbardetail',
-              state: { detail: 'S1117' }})}
+              // onClick={() => history.push({pathname: '/drawbardetail',
+              // state: { detail: 'S1117' }})}
+              onClick={() => history.push('/drawbars1117')}
             >
               Instrumented Drawbar S1117
             </Button>

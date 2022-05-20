@@ -31,8 +31,9 @@ import {
               className={classes.button}
               variant="contained"
               style={{backgroundColor: "#0992DF"}}
-              onClick={() => history.push({pathname: '/steerdetail',
-              state: { detail: 'S1212' }})}
+              // onClick={() => history.push({pathname: '/steerdetail',
+              // state: { detail: 'S1212' }})}
+              onClick={() => history.push('/steers1212')}
             >
               Steer Sensor S1212
             </Button>
@@ -44,8 +45,9 @@ import {
               className={classes.button}
               variant="contained"
               style={{backgroundColor: "#0992DF"}}
-              onClick={() => history.push({pathname: '/steerdetail',
-              state: { detail: 'S1313' }})}
+              // onClick={() => history.push({pathname: '/steerdetail',
+              // state: { detail: 'S1313' }})}
+              onClick={() => history.push('/steers1313')}
             >
               Steer Sensor S1313
             </Button>
@@ -57,8 +59,9 @@ import {
               className={classes.button}
               variant="contained"
               style={{backgroundColor: "#0992DF"}}
-              onClick={() => history.push({pathname: '/steerdetail',
-              state: { detail: 'S1414' }})}
+              // onClick={() => history.push({pathname: '/steerdetail',
+              // state: { detail: 'S1414' }})}
+              onClick={() => history.push('/steers1414')}
             >
               Steer Sensor S1414
             </Button>
@@ -70,8 +73,9 @@ import {
               className={classes.button}
               variant="contained"
               style={{backgroundColor: "#0992DF"}}
-              onClick={() => history.push({pathname: '/steerdetail',
-              state: { detail: 'S1515' }})}
+              // onClick={() => history.push({pathname: '/steerdetail',
+              // state: { detail: 'S1515' }})}
+              onClick={() => history.push('/steers1515')}
             >
               Steer Sensor S1515
             </Button>
@@ -82,8 +86,9 @@ import {
               className={classes.button}
               variant="contained"
               style={{backgroundColor: "#0992DF"}}
-              onClick={() => history.push({pathname: '/steerdetail',
-              state: { detail: 'S1616' }})}
+              // onClick={() => history.push({pathname: '/steerdetail',
+              // state: { detail: 'S1616' }})}
+              onClick={() => history.push('/steers1616')}
             >
               Steer Sensor S1616
             </Button>
@@ -94,8 +99,9 @@ import {
               className={classes.button}
               variant="contained"
               style={{backgroundColor: "#0992DF"}}
-              onClick={() => history.push({pathname: '/steers1717',
-              state: { detail: 'S1717' }})}
+              // onClick={() => history.push({pathname: '/steers1717',
+              // state: { detail: 'S1717' }})}
+              onClick={() => history.push('/steers1717')}
             >
               Steer Sensor S1717
             </Button>

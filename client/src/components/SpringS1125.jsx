@@ -34,23 +34,23 @@ const useStyles = makeStyles(() => ({
     fontSize: "32px"
   },
 }));
-export default function S1111(){
+export default function S1125(){
   const classes = useStyles();
     return(
     <Grid container xs={12} className={classes.container} >
 
       <Grid item xs={12} style={{display: 'flex', justifyContent: 'center'}}>
-         <h1> Accelerometer S1111 </h1>
+         <h1> Instrumented Suspension Spring S1125 </h1>
       </Grid>
       
       <Grid item xs={12} style={{display: 'flex', justifyContent: 'center'}}>
         <h2> 
-          Purpose : Measure the vibration / shock through the wheels <br/><br/>
-          IRT ID : S1111 <br/><br/>
-          Vehicle ID: mtr01 <br/><br/>
-          Installation Date : 2019-06-29 <br/><br/>
-          Callibration Date : 2020-10-16 <br/><br/>
-          Status Check : bad <br/>
+          Purpose : Measure suspension displacement <br/><br/>
+          IRT ID : S1125 <br/><br/>
+          Vehicle ID: mtr17 <br/><br/>
+          Installation Date : 2018-05-11 <br/><br/>
+          Callibration Date : 2019-08-24 <br/><br/>
+          Status Check : good <br/>
         </h2>
       </Grid>
       

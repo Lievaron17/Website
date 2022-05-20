@@ -32,7 +32,7 @@ export default function Contact() {
   return (
     <>
     <Grid>
-      <h1 className={classes.header}> Contact Us</h1>
+      <h1 className={classes.header} style={{fontSize: '50px'}}> Contact Us</h1>
     </Grid>
     <Grid container xs={12} className={classes.container} style={{backgroundColor: "#0992DF"}}>
 

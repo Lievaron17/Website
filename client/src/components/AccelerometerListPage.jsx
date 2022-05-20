@@ -19,7 +19,6 @@ export default function Irt() {
         className={classes.gridContainer}
         justify="center"
       >
-
         <Grid item xs={12}>
           <h1>Accelerometer</h1>
         </Grid>
@@ -43,8 +42,9 @@ export default function Irt() {
             className={classes.button}
             variant="contained"
             style={{backgroundColor: "#0992DF"}}
-            onClick={() => history.push({pathname: '/accelerometerdetail',
-            state: { detail: 'S2222' }})}
+            // onClick={() => history.push({pathname: '/accelerometerdetail',
+            // state: { detail: 'S2222' }})}
+            onClick={() => history.push('/accelerometers2222')}
           >
             Accelerometer S2222
           </Button>
@@ -56,8 +56,9 @@ export default function Irt() {
             className={classes.button}
             variant="contained"
             style={{backgroundColor: "#0992DF"}}
-            onClick={() => history.push({pathname: '/accelerometerdetail',
-            state: { detail: 'S3333' }})}
+            // onClick={() => history.push({pathname: '/accelerometerdetail',
+            // state: { detail: 'S3333' }})}
+            onClick={() => history.push('/accelerometers3333')}
           >
             Accelerometer S3333
           </Button>
@@ -69,8 +70,9 @@ export default function Irt() {
             className={classes.button}
             variant="contained"
             style={{backgroundColor: "#0992DF"}}
-            onClick={() => history.push({pathname: '/accelerometerdetail',
-            state: { detail: 'S1234' }})}
+            // onClick={() => history.push({pathname: '/accelerometerdetail',
+            // state: { detail: 'S1234' }})}
+            onClick={() => history.push('/accelerometers1234')}
           >
             Accelerometer S1234
           </Button>
@@ -81,8 +83,9 @@ export default function Irt() {
             className={classes.button}
             variant="contained"
             style={{backgroundColor: "#0992DF"}}
-            onClick={() => history.push({pathname: '/accelerometerdetail',
-            state: { detail: 'S1235' }})}
+            // onClick={() => history.push({pathname: '/accelerometerdetail',
+            // state: { detail: 'S1235' }})}
+            onClick={() => history.push('/accelerometers1235')}
           >
             Accelerometer S1235
           </Button>
@@ -93,8 +96,9 @@ export default function Irt() {
             className={classes.button}
             variant="contained"
             style={{backgroundColor: "#0992DF"}}
-            onClick={() => history.push({pathname: '/accelerometerdetail',
-            state: { detail: 'S1236' }})}
+            // onClick={() => history.push({pathname: '/accelerometerdetail',
+            // state: { detail: 'S1236' }})}
+            onClick={() => history.push('/accelerometers1236')}
           >
              Accelerometer S1236
           </Button>

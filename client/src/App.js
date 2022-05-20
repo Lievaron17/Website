@@ -60,15 +60,15 @@ export default function App() {
               <IconButton size="large" onClick={() => history.goBack()}>
                 <ArrowBackIcon />
               </IconButton>
-              <Button color="inherit" onClick={() => history.push('/home')}>
+              <Button color="inherit" onClick={() => history.push('/home')} >
                   Home 
               </Button>
-              <Button color="inherit" onClick= {() => history.push('/contact-us')}>
+              <Button color="inherit" onClick= {() => history.push('/contact-us')} >
                   Contact Us 
               </Button>
             </div>
           <div className={classes.navButton}>
-            <Typography>
+            <Typography >
               Institute of Railway Technology (IRT) Database
             </Typography>
           </div>   
